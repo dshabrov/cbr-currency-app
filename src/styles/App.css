@@ -1,0 +1,89 @@
+.AppContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  align-content: center; 
+  justify-content: center; 
+  overflow: auto; 
+}
+
+.App {
+  width: 550px;
+  
+  border: solid 1px;
+  border-color: rgb(192, 192, 192);
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
+}
+
+.react-select-box {
+  padding: 10px 0 !important;
+}
+
+.react-select-box:after {
+  top: 17px !important;
+}
+
+.react-select-box-clear {
+  top: 10px !important;
+}
+
+.react-select-box:before {
+  top: 10px !important;
+}
+
+.react-select-box-options {
+  overflow-y: scroll;
+  max-height: 200px;
+  width:100% !important;
+}
+
+.react-select-box-container {
+  width:100% !important;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 150px;
+}
+
+.filterElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  min-height: 60px;
+}
+
+.dateFilter {
+  flex: 0 1 auto;
+  order: 0;
+  min-width: 150px;
+  width: 150px;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.currencyFilter {
+  flex: 1 1 auto;
+  order: 1;
+  margin-left: 2px;
+}
+
+.gridContainer {
+  flex: 0 1 auto;
+  order: 2;
+  min-height: 350px;
+}
+
