@@ -15,8 +15,7 @@ export function getData(date) {
     return (dispatch, getState) => {
 
         dispatch({
-            type: GET_DATA,
-            payload: []
+            type: GET_DATA
         })
 
         Request(date)
@@ -29,7 +28,7 @@ export function getData(date) {
             .catch(error => {
                 dispatch({ 
                     type: DATA_FAILED, 
-                    payload: error.message 
+                    payload: 'Request failed: ' +  error.message 
                 });
                 throw error;
             }); 

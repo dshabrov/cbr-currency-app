@@ -6,7 +6,7 @@ import { getData } from '../actions/dataActions';
 
 const filterData = (data, filter) => {
     if (data.length > 0 && filter.length > 0)
-        return data.filter(item => filter.includes(item["CharCode"]));
+        return data.filter(item => filter.indexOf(item["CharCode"]) !== -1);
     return data;
 }
 
