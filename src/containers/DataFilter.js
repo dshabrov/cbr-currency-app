@@ -32,11 +32,6 @@ const mapStateToActions = (dispatch) => {
 }
 
 class DataFilter extends Component {
-
-    componentDidMount() {
-        this.props.getData();
-    }
-
     render() {
         return (
             <Filter {...this.props} />
