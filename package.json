@@ -1,8 +1,9 @@
 {
-  "name": "cbr-currency-app",
+  "name": "hello-world",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme": "^3.1.0",
     "react": "^15.6.1",
     "react-data-grid": "^2.0.61",
     "react-dom": "^15.6.1",
@@ -15,12 +16,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "testAll": "react-scripts test --coverage --env=jsdom"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.3",
     "react-bootstrap": "^0.31.5",
     "react-bootstrap-date-picker": "^5.1.0",
-    "react-select-box": "^3.0.1"
+    "react-select-box": "^3.0.1",
+    "react-test-renderer": "^15.6.2"
   }
 }

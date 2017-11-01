@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import ReactDataGrid from 'react-data-grid';
 
 class DataGrid extends Component {
@@ -31,6 +31,10 @@ class DataGrid extends Component {
             </div>
         ); 
     }
+}
+
+DataGrid.propTypes = {
+    data: PropTypes.array
 }
       
 export default DataGrid;
